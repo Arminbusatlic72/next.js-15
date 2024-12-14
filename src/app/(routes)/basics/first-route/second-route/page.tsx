@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="p-4 bg-gray-800">
+    <div className="p-4 bg-gray-800 text-white">
       <h2 className="text-2xl font-bold mb-4">Second Route Page Content</h2>
       <p className="mb-4">
         Welcome to the deepest level of our nested routing example. This page
@@ -11,7 +11,7 @@ export default function Page() {
         single page.
       </p>
       <div className="space-x-4">
-        <ul className="space-y-2">
+        <ul className="space-y-2 flex w-full justify-between">
           <li className="transition-all duration-300 hover:translate-x-2">
             <Link href="/basics/first-route" className="text-cyan-400">
               <ArrowPrevious /> Back to basics/first-route
